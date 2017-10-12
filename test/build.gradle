@@ -1,0 +1,4 @@
+dependencies {
+    compile project(':viewports-core')
+    compile project(':viewports-swing')
+}
