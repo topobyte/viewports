@@ -24,6 +24,10 @@ public interface Viewport
 
 	public double getPositionY();
 
+	public double getViewportWidth();
+
+	public double getViewportHeight();
+
 	public double getZoom();
 
 	public void setPositionX(double value);

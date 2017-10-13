@@ -89,6 +89,18 @@ public class BaseScenePanel extends JPanel
 	}
 
 	@Override
+	public double getViewportWidth()
+	{
+		return getWidth();
+	}
+
+	@Override
+	public double getViewportHeight()
+	{
+		return getHeight();
+	}
+
+	@Override
 	public double getZoom()
 	{
 		return zoom;
