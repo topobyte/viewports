@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <name>Project</name>
-  <description>This project does this and that.</description>
-  <url>https://github.com/topobyte/project</url>
+  <name>Viewports Swing</name>
+  <description>A viewports library - Swing module</description>
 </project>

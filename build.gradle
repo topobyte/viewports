@@ -33,13 +33,16 @@ configure([project(':viewports-core'),
         archives sourcesJar
     }
 
-    def global = new File('info.pom');
+    def global = new File(rootProject.projectDir, 'info.pom');
     def local = new File(project.projectDir, 'info.pom');
 
     def pomInfo = new XmlSlurper().parse(global);
+    def projName = pomInfo.name
+    def projDesc = pomInfo.description
     if (local.exists()) {
         def pomInfoL = new XmlSlurper().parse(local);
-        pomInfo.name = pomInfoL.name
+        projName = pomInfoL.name
+        projDesc = pomInfoL.description
     }
 
     afterEvaluate { project ->
@@ -47,8 +50,8 @@ configure([project(':viewports-core'),
             repositories {
                 mavenDeployer {
                     pom.project {
-                        name pomInfo.name
-                        description pomInfo.description
+                        name projName
+                        description projDesc
                         url pomInfo.url
                         licenses {
                             license {

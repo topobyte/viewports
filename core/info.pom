@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
   <name>Viewports Core</name>
-  <description>This project does this and that.</description>
-  <url>https://github.com/topobyte/viewports</url>
+  <description>A viewports library - core module</description>
 </project>
