@@ -1,4 +1,5 @@
-include 'core', 'swing', 'test'
+include 'core', 'swing', 'gwt', 'test'
 project(':core').name = 'viewports-core'
 project(':swing').name = 'viewports-swing'
+project(':gwt').name = 'viewports-gwt'
 project(':test').name = 'viewports-test'

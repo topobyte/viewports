@@ -1,0 +1,13 @@
+if (project.hasProperty("topobyte")) {
+    apply from: 'file:///' + System.getProperty("user.home") \
+        + '/.gradle/topobyte.gradle'
+}
+
+dependencies {
+    compile project(':viewports-core')
+
+    compileOnly 'com.google.gwt:gwt-user:2.8.2'
+
+    testRuntime 'org.slf4j:slf4j-log4j12:1.6.1'
+    testCompile 'log4j:log4j:1.2.16'
+}
