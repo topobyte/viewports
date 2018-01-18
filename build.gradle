@@ -22,7 +22,8 @@ subprojects {
 
 
 configure([project(':viewports-core'),
-        project(':viewports-swing')]) {
+        project(':viewports-swing'),
+        project(':viewports-gwt')]) {
 
     task sourcesJar(type: Jar, dependsOn: classes) {
         classifier = 'sources'
